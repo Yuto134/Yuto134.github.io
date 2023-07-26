@@ -142,7 +142,7 @@ main .container {
 #now .temp {
     margin-left: 1rem;
     padding-left: 24px;
-    background: url(images/thermometer.svg) 0 0 no-repeat;
+    background: url(thermometer.svg) 0 0 no-repeat;
     background-size: 24px 24px;
 }
 #forecast {
@@ -178,13 +178,13 @@ main .container {
 #forecast .temp {
     margin-left: 1rem;
     padding-left: 24px;
-    background: url(images/thermometer.svg) 0 0 no-repeat;
+    background: url(thermometer.svg) 0 0 no-repeat;
     background-size: 24px 24px;   
 }
 
 /*　ローディングサイン　*/
 #now {
-    background-image: url(images/loading.gif);
+    background-image: url(loading.gif);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -263,7 +263,7 @@ main .container {
                 const min = String(dateTime.getMinutes()).padStart(2, '0');
                 const temperature = Math.round(forecast.main.temp);
                 const description = forecast.weather[0].description;
-                const iconPath = `images/${forecast.weather[0].icon}.svg`;
+                const iconPath = `${forecast.weather[0].icon}.svg`;
 
                 //現在の天気とそれ以外で出力を変える
                 if(index === 0) {
