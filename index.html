@@ -29,7 +29,7 @@ body {
 }
 @media (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 30px;
     }
@@ -149,6 +149,7 @@ main .container {
     border-collapse: collapse;
     margin: 2rem auto 0;
     width: 400px;
+    max-width: 100%;
 }
 #forecast th, #forecast td {
     border-top: 1px solid #ccc;
@@ -263,7 +264,7 @@ main .container {
                 const min = String(dateTime.getMinutes()).padStart(2, '0');
                 const temperature = Math.round(forecast.main.temp);
                 const description = forecast.weather[0].description;
-                const iconPath = `${forecast.weather[0].icon}.png`;
+                const iconPath = `${forecast.weather[0].icon}.svg`;
 
                 //現在の天気とそれ以外で出力を変える
                 if(index === 0) {
