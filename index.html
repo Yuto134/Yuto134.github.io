@@ -263,7 +263,7 @@ main .container {
                 const min = String(dateTime.getMinutes()).padStart(2, '0');
                 const temperature = Math.round(forecast.main.temp);
                 const description = forecast.weather[0].description;
-                const iconPath = `${forecast.weather[0].icon}.svg`;
+                const iconPath = `${forecast.weather[0].icon}.png`;
 
                 //現在の天気とそれ以外で出力を変える
                 if(index === 0) {
